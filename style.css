@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial,
+    sans-serif;
+  background-color: #0d0d0d;
+  color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+  line-height: 1.6;
+}
+
+.page-header {
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  opacity: 0.9;
+}
+
+.main-content {
+  flex-grow: 1; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; 
+}
+
+.auth-container {
+  background-color: #1a1a1a;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  width: 100%; 
+  max-width: 400px; 
+}
+
+.auth-container h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: #ffffff;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #c0c0c0;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 1rem;
+  background-color: #ffffff;
+  border: 1px solid #333;
+  border-radius: 6px;
+  color: #0d0d0d;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #f0c14b; 
+  box-shadow: 0 0 0 3px rgba(240, 193, 75, 0.2);
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 12px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  margin-top: 10px;
+}
+
+.btn-primary:hover {
+  background-color: #333;
+}
+
+.btn-primary:active {
+  transform: scale(0.98); 
+}
+
+.auth-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.auth-links a,
+.auth-link a,
+.page-footer a {
+  color: #f0c14b; 
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.auth-links a:hover,
+.auth-link a:hover,
+.page-footer a:hover {
+  text-decoration: underline;
+}
+
+.auth-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+.page-footer {
+  text-align: center;
+  padding: 25px 20px;
+  width: 100%;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+.page-footer a {
+  margin: 0 10px;
+}
