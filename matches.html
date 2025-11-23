@@ -1,60 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="ltr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MYE - Upcoming Matches</title>
-    <link rel="stylesheet" href="matches-style.css">
+    <title>Matches Animation - Fixed Layout</title>
+    <link rel="stylesheet" href="matches-style2.css">
 </head>
+
 <body>
-    <header class="top-bar">
+    <div class="top-bar">
         <div class="logo">
-            <span class="logo-icon">&#9776;</span> MYE - List
+            MYE - List
         </div>
         <div class="search-box">
-            <span class="search-icon">&#9906;</span>
-            <input type="text" placeholder="Search Matches">
+            <span style="font-size:1.2em; padding-left:5px;">🔍</span>
+            <input type="text" placeholder="Search Matches...">
         </div>
-    </header>
-    <main class="content">
-        <h1>Upcoming Matches</h1>
-        <div class="match-card">
-            <div class="match-details">
-                <p class="team">Team A VS Team B</p>
-                <p>Date: 25th 0ct,2025</p>
-                <p>Time: 7:00 PM</p>
-                <p>Location: Stadium XYZ</p>
-            </div>
-                <button class="view-details-btn">view Details</button>
-        </div>
-        <div class="match-card">
-            <div class="match-details">
-                <p class="team">Team C VS Team D</p>
-                <p>Date: 27th 0ct,2025</p>
-                <p>Time: 6:00 PM</p>
-                <p>Location: Arena ABC</p>
-            </div>
-                <button class="view-details-btn">view Details</button>
-        </div>
-        <div class="match-card">
-            <div class="match-details">
-                <p class="team">Team E VS Team F</p>
-                <p>Date: 30th 0ct,2025</p>
-                <p>Time: 5:00 PM</p>
-                <p>Location: field 123</p>
-            </div>
-            <button class="view-details-btn">view Details</button>
-        </div>
-    </main>
-    <footer class="bottom-nav">
-        <a href="#" class="nav-item-active">
-            <span>&#8962;</span>
-        </a>
-        <a href="#" class="nav-item"><span>&#128197;</span></a>
-        <a href="#" class="nav-item"><span>&#127915;</span></a>
-        <a href="#" class="nav-item"><span>&#128100;</span></a>
+    </div>
 
-    </footer>
-    
+    <div class="content">
+        <h1>Upcoming Matches</h1>
+        <div class="matches-window">
+            <div class="matches-list">
+                <div class="match-card">
+                    <div class="match-details">
+                        <div class="teams">Team A VS Team B</div>
+                        <p>25th Oct, 7:00 PM</p>
+                        <p>Stadium XYZ</p>
+                    </div>
+                    <button class="view-details-btn">View</button>
+                </div>
+
+                <div class="match-card">
+                    <div class="match-details">
+                        <div class="teams">Team C VS Team D</div>
+                        <p>27th Oct, 6:00 PM</p>
+                        <p>Arena ABC</p>
+                    </div>
+                    <button class="view-details-btn">View</button>
+                </div>
+
+                <div class="match-card">
+                    <div class="match-details">
+                        <div class="teams">Team E VS Team F</div>
+                        <p>30th Oct, 5:00 PM</p>
+                        <p>Field 123</p>
+                    </div>
+                    <button class="view-details-btn">View</button>
+                </div>
+
+                <div class="match-card">
+                    <div class="match-details">
+                        <div class="teams">Team G VS Team H</div>
+                        <p>1st Nov, 8:00 PM</p>
+                        <p>Main Stadium</p>
+                    </div>
+                    <button class="view-details-btn">View</button>
+                </div>
+
+                <div class="match-card">
+                    <div class="match-details">
+                        <div class="teams">Team I VS Team J</div>
+                        <p>3rd Nov, 4:00 PM</p>
+                        <p>City Ground</p>
+                    </div>
+                    <button class="view-details-btn">View</button>
+                </div>
+                <!-- repeat the cards again for the loop -->
+                <div class="match-card">
+                    <div class="match-details">
+                        <div class="teams">Team A VS Team B</div>
+                        <p>25th Oct, 7:00 PM</p>
+                        <p>Stadium XYZ</p>
+                    </div>
+                    <button class="view-details-btn">View</button>
+                </div>
+
+                <div class="match-card">
+                    <div class="match-details">
+                        <div class="teams">Team C VS Team D</div>
+                        <p>27th Oct, 6:00 PM</p>
+                        <p>Arena ABC</p>
+                    </div>
+                    <button class="view-details-btn">View</button>
+                </div>
+
+                <div class="match-card">
+                    <div class="match-details">
+                        <div class="teams">Team E VS Team F</div>
+                        <p>30th Oct, 5:00 PM</p>
+                        <p>Field 123</p>
+                    </div>
+                    <button class="view-details-btn">View</button>
+                </div>
+
+                <div class="match-card">
+                    <div class="match-details">
+                        <div class="teams">Team G VS Team H</div>
+                        <p>1st Nov, 8:00 PM</p>
+                        <p>Main Stadium</p>
+                    </div>
+                    <button class="view-details-btn">View</button>
+                </div>
+
+                <div class="match-card">
+                    <div class="match-details">
+                        <div class="teams">Team I VS Team J</div>
+                        <p>3rd Nov, 4:00 PM</p>
+                        <p>City Ground</p>
+                    </div>
+                    <button class="view-details-btn">View</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>
