@@ -21,7 +21,7 @@ body {
     flex-shrink: 0;
 }
 
-.login-btn {
+.login-btn, .matches-btn {
     color: #007bff;
     text-decoration: none;
     font-weight: bold;
@@ -168,4 +168,5 @@ body {
     border-radius: 6px;
     cursor: pointer;
     font-size: 0.8em;
+    text-decoration: none;
 }

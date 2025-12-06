@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Details</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/match.css">
+</head>
+<body>
+    <div class="top-bar">
+        <a href="login.html" class="login-btn">Login</a>
+        <a href="index.html" class="matches-btn">All Matches</a>
+    </div>
+    <div class="content">
+        <div class="match-container">
+            <h1>Match Details</h1>
+            <div class="match-info">
+                <p><strong>Team A vs Team B</strong></p>
+                <p>Date: 2025-12-25</p>
+                <p>Time: 18:00</p>
+                <p>Stadium: Awesome Stadium</p>
+            </div>
+            <div class="booking-section">
+                <h2>Book a Seat</h2>
+                <button id="add-seat">Add Seat</button>
+                <div id="seats-container" class="seats-container"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const addSeatButton = document.getElementById('add-seat');
+        const seatsContainer = document.getElementById('seats-container');
+        let seatCounter = 0;
+
+        addSeatButton.addEventListener('click', () => {
+            seatCounter++;
+            const seat = document.createElement('div');
+            seat.classList.add('seat', 'adding');
+            seat.innerHTML = `
+                <span>Seat ${seatCounter}</span>
+                <div>
+                    <button class="vip-btn">VIP</button>
+                    <button class="normal-btn">Normal</button>
+                    <button class="remove-seat-btn">Remove</button>
+                </div>
+            `;
+            seatsContainer.appendChild(seat);
+
+            seat.addEventListener('animationend', () => {
+                seat.classList.remove('adding');
+            });
+
+            const vipBtn = seat.querySelector('.vip-btn');
+            const normalBtn = seat.querySelector('.normal-btn');
+            const removeBtn = seat.querySelector('.remove-seat-btn');
+
+            vipBtn.addEventListener('click', () => {
+                seat.classList.add('vip');
+            });
+
+            normalBtn.addEventListener('click', () => {
+                seat.classList.remove('vip');
+            });
+
+            removeBtn.addEventListener('click', () => {
+                seat.classList.add('removing');
+                seat.addEventListener('animationend', () => {
+                    seat.remove();
+                });
+            });
+        });
+    </script>
+</body>
+</html>
