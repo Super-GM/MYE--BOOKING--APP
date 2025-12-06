@@ -11,7 +11,7 @@ body {
   color: #f0f0f0;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; 
+  min-height: 100vh;
   line-height: 1.6;
 }
 
@@ -24,11 +24,11 @@ body {
 }
 
 .main-content {
-  flex-grow: 1; 
+  flex-grow: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px; 
+  padding: 20px;
 }
 
 .auth-container {
@@ -36,8 +36,8 @@ body {
   padding: 25px;
   border-radius: 12px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-  width: 100%; 
-  max-width: 400px; 
+  width: 100%;
+  max-width: 400px;
 }
 
 .auth-container h2 {
@@ -71,7 +71,7 @@ body {
 
 .form-control:focus {
   outline: none;
-  border-color: #f0c14b; 
+  border-color: #f0c14b;
   box-shadow: 0 0 0 3px rgba(240, 193, 75, 0.2);
 }
 
@@ -94,7 +94,7 @@ body {
 }
 
 .btn-primary:active {
-  transform: scale(0.98); 
+  transform: scale(0.98);
 }
 
 .auth-links {
@@ -108,7 +108,7 @@ body {
 .auth-links a,
 .auth-link a,
 .page-footer a {
-  color: #f0c14b; 
+  color: #f0c14b;
   text-decoration: none;
   font-size: 0.9rem;
 }
